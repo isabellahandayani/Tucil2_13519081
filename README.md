@@ -16,9 +16,11 @@
 ## Requirements
 1. Python 3.9
 2. Library Roman
+
 ## Setup
 
 ## How To Run
 
 
 ## Author
+Isabella Handayani Sumantri - 13519081

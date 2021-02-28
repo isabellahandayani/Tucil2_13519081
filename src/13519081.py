@@ -1,4 +1,5 @@
 import roman
+import time
 
 text = []
 result = []
@@ -67,7 +68,7 @@ def main():
     try:
         file = open(f"../test/{filename}", "r")
         add(file)
-        if isCyclic():
+        if isAcyclic():
             toposort()
             output()
         else:
@@ -79,7 +80,13 @@ def main():
     input()
 
 
-def isCyclic():
+def isAcyclic():
+    # Memeriksa apakah graf siklik
+
+    # KAMUS LOKAL
+    # found : boolean
+
+    # ALGORITMA
     found = False
     for i in range(len(text)):
         if len(text[i]) == 1 :
